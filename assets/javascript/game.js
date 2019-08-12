@@ -1,4 +1,4 @@
-let letters = ["a", "b", "c"]
+let letters = ["e", "a", "o"]
 
 let guessedLetters = [];
 
@@ -44,13 +44,14 @@ document.onkeydown = (event) => {
 
     if (letter === letterToGuess) {
         wins++;
-        document.querySelector("wins").innerHTML = wins;
+        document.querySelector("#wins").innerHTML = wins;
         reset();
     }
 
     if(guessLeft === 0) {
         losses++;
-        document.querySelector("losses").innerHTML = losses;
+        document.querySelector("#losses").innerHTML = losses;
+        reset();
 
 
     }
